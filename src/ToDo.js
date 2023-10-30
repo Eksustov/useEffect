@@ -1,9 +1,19 @@
 import React, { useEffect, useState } from 'react';
 
 function ToDo(props){
+    const [check, setCheck] = useState(props.completed)
 
+    const handleChange = (event) =>{
+    setCheck(event.target.change)
+    }
     return(
-        <h1><input type="checkbox" id={props.id} checked={props.check}/>{props.user} {props.id} {props.title}</h1>
+        <h1>
+                        <p>UserID: {props.userId}</p>
+                        <p>ID: {props.id} </p>
+                        <p>Title: {props.title} </p>
+                        <input type="checkbox" 
+                        checked={check}
+                        onChange={handleChange}/></h1>
     )
 }
 
