@@ -8,12 +8,12 @@ function ToDo(props){
     }
     return(
         <h1>
-                        <p>UserID: {props.userId}</p>
-                        <p>ID: {props.id} </p>
-                        <p>Title: {props.title} </p>
-                        <input type="checkbox" 
-                        checked={check}
-                        onChange={handleChange}/></h1>
+            <p>UserID: {props.userId}</p>
+            <p>ID: {props.id} </p>
+            <p>Title: {props.title} </p>
+            <input type="checkbox" 
+            checked={check}
+            onChange={handleChange}/></h1>
     )
 }
 
