@@ -1,7 +1,6 @@
-import ToDo from "./ToDo.js";
 import React, { useEffect, useState } from 'react';
 
-function Comment(props){
+function Comment(){
 
     const [comment, setComment] = useState({});
     const [loading,setLoading] = useState(true);
